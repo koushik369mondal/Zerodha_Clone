@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function LeftSection() {
+export default function Navbar() {
     return (
         <div>
-            <h1>Left Section</h1>
+            <h1>Navbar</h1>
         </div>
     )
 }
