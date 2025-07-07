@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -54,10 +54,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-.nav-link{
-  margin-left:40px;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -69,4 +65,14 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+ */
+
+.nav-link{
+  margin-left:40px;
+}
+
+a {
+  text-decoration: none;
+  
 }
