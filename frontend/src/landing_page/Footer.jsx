@@ -160,7 +160,6 @@ export default function Footer() {
                 </div>
                 <div className="row">
                     <div className="col">
-
                     </div>
                     <div className="col">
                         <a className="text-muted" style={{ fontSize: '14px' }} href="#">NSE</a>
