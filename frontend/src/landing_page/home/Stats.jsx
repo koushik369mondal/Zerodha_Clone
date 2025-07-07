@@ -42,8 +42,8 @@ export default function Stats() {
                             style={{ width: "100%" }}
                         />
                         <div className="text-center">
-                            <a href="" className="mx-5" style={{textDecoration: "none"}}>Explore our products <i class="fa-solid fa-arrow-right"></i></a>
-                            <a href="" style={{textDecoration: "none"}}>Try Kite demo <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="" className="mx-5" style={{textDecoration: "none", color:"#387ed1"}}>Explore our products <i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="" style={{textDecoration: "none", color:"#387ed1"}}>Try Kite demo <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
