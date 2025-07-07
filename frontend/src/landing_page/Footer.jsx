@@ -20,7 +20,7 @@ export default function Footer() {
                             <a href="" className="col text-muted"></a>
                             <a href="" className="col text-muted"></a>
                         </div>
-                        <div className="row border"></div>
+                        <div className="row border opacity-50"></div>
                         <div className="row mt-3">
                             <a href="" className="col text-muted"><i class="fa-brands fa-youtube"></i></a>
                             <a href="" className="col text-muted"><i class="fa-brands fa-whatsapp"></i></a>
@@ -32,74 +32,74 @@ export default function Footer() {
                     </div>
                     <div className="col" >
                         <p>Account</p>
-                        <a href="" className="text-muted link-underline link-underline-opacity-0">Open demat account</a>
+                        <a href="" className="text-muted mb-1 d-block link-underline link-underline-opacity-0">Open demat account</a>
                         <br />
-                        <a href="" className="text-muted">Minor demat account</a>
+                        <a href="" className="text-muted mb-1 d-block">Minor demat account</a>
                         <br />
-                        <a href="" className="text-muted">NRI demat account</a>
+                        <a href="" className="text-muted mb-1 d-block">NRI demat account</a>
                         <br />
-                        <a href="" className="text-muted">Commodity</a>
+                        <a href="" className="text-muted mb-1 d-block">Commodity</a>
                         <br />
-                        <a href="" className="text-muted">Dematerialisation</a>
+                        <a href="" className="text-muted mb-1 d-block">Dematerialisation</a>
                         <br />
-                        <a href="" className="text-muted">Fund transfer</a>
+                        <a href="" className="text-muted mb-1 d-block">Fund transfer</a>
                         <br />
-                        <a href="" className="text-muted">MTF</a>
+                        <a href="" className="text-muted mb-1 d-block">MTF</a>
                         <br />
-                        <a href="" className="text-muted">Referral program</a>
+                        <a href="" className="text-muted mb-1 d-block">Referral program</a>
                         <br />
                     </div>
                     <div className="col">
                         <p>Support</p>
-                        <a href="" className="text-muted">Contact us</a>
+                        <a href="" className="text-muted mb-1 d-block">Contact us</a>
                         <br />
-                        <a href="" className="text-muted">Support portal</a>
+                        <a href="" className="text-muted mb-1 d-block">Support portal</a>
                         <br />
-                        <a href="" className="text-muted">How to file a complaint?</a>
+                        <a href="" className="text-muted mb-1 d-block">How to file a complaint?</a>
                         <br />
-                        <a href="" className="text-muted">Status of your complaints</a>
+                        <a href="" className="text-muted mb-1 d-block">Status of your complaints</a>
                         <br />
-                        <a href="" className="text-muted">Bulletin</a>
+                        <a href="" className="text-muted mb-1 d-block">Bulletin</a>
                         <br />
-                        <a href="" className="text-muted">Circular</a>
+                        <a href="" className="text-muted mb-1 d-block">Circular</a>
                         <br />
-                        <a href="" className="text-muted">Z-Connect blog</a>
+                        <a href="" className="text-muted mb-1 d-block">Z-Connect blog</a>
                         <br />
-                        <a href="" className="text-muted">Downloads</a>
+                        <a href="" className="text-muted mb-1 d-block">Downloads</a>
                         <br />
                     </div>
                     <div className="col">
                         <p>Company</p>
-                        <a href="" className="text-muted">About</a>
+                        <a href="" className="text-muted mb-1 d-block">About</a>
                         <br />
-                        <a href="" className="text-muted">Philosophy</a>
+                        <a href="" className="text-muted mb-1 d-block">Philosophy</a>
                         <br />
-                        <a href="" className="text-muted">Press & media</a>
+                        <a href="" className="text-muted mb-1 d-block">Press & media</a>
                         <br />
-                        <a href="" className="text-muted">Careers</a>
+                        <a href="" className="text-muted mb-1 d-block">Careers</a>
                         <br />
-                        <a href="" className="text-muted">Zerodha Cares (CSR)</a>
+                        <a href="" className="text-muted mb-1 d-block">Zerodha Cares (CSR)</a>
                         <br />
-                        <a href="" className="text-muted">Zerodha.tech</a>
+                        <a href="" className="text-muted mb-1 d-block">Zerodha.tech</a>
                         <br />
-                        <a href="" className="text-muted">Open source</a>
+                        <a href="" className="text-muted mb-1 d-block">Open source</a>
                         <br />
                     </div>
                     <div className="col">
                         <p>Quick links</p>
-                        <a href="" className="text-muted">Upcoming IPOs</a>
+                        <a href="" className="text-muted mb-1 d-block">Upcoming IPOs</a>
                         <br />
-                        <a href="" className="text-muted">Brokerage charges</a>
+                        <a href="" className="text-muted mb-1 d-block">Brokerage charges</a>
                         <br />
-                        <a href="" className="text-muted">Market holidays</a>
+                        <a href="" className="text-muted mb-1 d-block">Market holidays</a>
                         <br />
-                        <a href="" className="text-muted">Economic calendar</a>
+                        <a href="" className="text-muted mb-1 d-block">Economic calendar</a>
                         <br />
-                        <a href="" className="text-muted">Calculators</a>
+                        <a href="" className="text-muted mb-1 d-block">Calculators</a>
                         <br />
-                        <a href="" className="text-muted">Markets</a>
+                        <a href="" className="text-muted mb-1 d-block">Markets</a>
                         <br />
-                        <a href="" className="text-muted">Sectors</a>
+                        <a href="" className="text-muted mb-1 d-block">Sectors</a>
                         <br />
                     </div>
                 </div>
