@@ -112,19 +112,19 @@ export default function Footer() {
                         no.: INZ000038238 Registered Address: Zerodha Broking Ltd., #153/154,
                         4th Cross, Dollars Colony, Opp. Clarence Public School, J.P Nagar 4th
                         Phase, Bengaluru - 560078, Karnataka, India. For any complaints
-                        pertaining to securities broking please write to complaints@zerodha.com,
-                        for DP related to dp@zerodha.com. Please ensure you carefully read the
+                        pertaining to securities broking please write to <a href="">complaints@zerodha.com</a>,
+                        for DP related to <a href="">dp@zerodha.com</a>. Please ensure you carefully read the
                         Risk Disclosure Document as prescribed by SEBI | ICF
                     </p>
 
                     <p>
-                        Procedure to file a complaint on SEBI SCORES: Register on SCORES portal.
+                        Procedure to file a complaint on <a href="">SEBI SCORES</a>: Register on SCORES portal.
                         Mandatory details for filing complaints on SCORES: Name, PAN, Address,
                         Mobile Number, E-mail ID. Benefits: Effective Communication, Speedy
                         redressal of the grievances
                     </p>
 
-                    <p>Smart Online Dispute Resolution | Grievances Redressal Mechanism</p>
+                    <p><a href="">Smart Online Dispute Resolution | Grievances Redressal Mechanism</a></p>
 
                     <p>
                         Investments in securities market are subject to market risks; read all
@@ -155,7 +155,7 @@ export default function Footer() {
                         allotment. In case of non allotment the funds will remain in your bank
                         account. As a business we don't give stock tips, and have not authorized
                         anyone to trade on behalf of others. If you find anyone claiming to be
-                        part of Zerodha and offering such services, please create a ticket here.
+                        part of Zerodha and offering such services, please <a href="">create a ticket here</a>.
                     </p>
                 </div>
                 <div className="row">
