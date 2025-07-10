@@ -1,14 +1,14 @@
 import React from 'react'
 import Hero from './Hero'
-import Brockrage from './Brockrage'
 import OpenAccount from '../OpenAccount'
+import Brokerage from './Brockrage'
 
 export default function PricingPage() {
     return (
         <div>
             <Hero />
             <OpenAccount />
-            <Brockrage />
+            <Brokerage />
         </div>
     )
 }
