@@ -76,3 +76,25 @@ a {
   text-decoration: none;
   
 }
+#support-hero{
+  background-color: #387ed1;
+  color: white;
+}
+#supportWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+#support-hero input{
+  padding: 15px 50px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+
+  /* width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px; */
+}

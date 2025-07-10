@@ -41,7 +41,7 @@ export default function CreateTicket() {
                     <a href="" style={{ lineHeight: '2' }}>General</a>
                 </div>
             </div>
-            <div className="row">
+            <div className="row mb-5">
                 <div className="col-4 p-5 mb-2">
                     <h4 className="">
                         <i class="fa-solid fa-credit-card"></i> Funds
