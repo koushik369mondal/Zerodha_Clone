@@ -10,7 +10,6 @@ import Summary from "./Summary";
 import WatchList from "./WatchList";
 import GeneralContextProvider from "./GeneralContext";
 
-
 export default function Dashboard() {
   return (
     <div className="dashboard-container">
