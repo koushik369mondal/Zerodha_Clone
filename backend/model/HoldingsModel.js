@@ -2,6 +2,7 @@ const { model } = require('mongoose');
 
 const HoldingsSchema = require('../schemas/HoldingsSchema');
 
-const HoldingsModel = new model("holding", HoldingsSchema);
+// ✅ Correct usage — no `new`
+const HoldingsModel = model("holding", HoldingsSchema);
 
 module.exports = HoldingsModel;
