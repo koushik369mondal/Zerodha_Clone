@@ -1,5 +1,4 @@
 import React, { useState, useContext } from "react";
-import axios from "axios";
 import GeneralContext from "./GeneralContext";
 
 import { Tooltip, Grow } from "@mui/material";
@@ -11,38 +10,38 @@ import {
 } from "@mui/icons-material";
 
 import { watchlist } from "../data/data";
-import DoughnutChart from "./DoughnutChart";
+import DoughnutChart from "./DoughnutChart"; // ✅ fixed import
 
-const labels = watchlist.map((item) => item.name);
+const labels = watchlist.map((stock) => stock.name);
 
-const chartData = {
-  labels,
-  datasets: [
-    {
-      label: "Price",
-      data: watchlist.map((stock) => stock.price),
-      backgroundColor: [
-        "rgba(255, 99, 132, 0.5)",
-        "rgba(54, 162, 235, 0.5)",
-        "rgba(255, 206, 86, 0.5)",
-        "rgba(75, 192, 192, 0.5)",
-        "rgba(153, 102, 255, 0.5)",
-        "rgba(255, 159, 64, 0.5)",
-      ],
-      borderColor: [
-        "rgba(255, 99, 132, 1)",
-        "rgba(54, 162, 235, 1)",
-        "rgba(255, 206, 86, 1)",
-        "rgba(75, 192, 192, 1)",
-        "rgba(153, 102, 255, 1)",
-        "rgba(255, 159, 64, 1)",
-      ],
-      borderWidth: 1,
-    },
-  ],
-};
+const WatchList = () => {
+  const data = {
+    labels,
+    datasets: [
+      {
+        label: "Price",
+        data: watchlist.map((stock) => stock.price),
+        backgroundColor: [
+          "rgba(255, 99, 132, 0.5)",
+          "rgba(54, 162, 235, 0.5)",
+          "rgba(255, 206, 86, 0.5)",
+          "rgba(75, 192, 192, 0.5)",
+          "rgba(153, 102, 255, 0.5)",
+          "rgba(255, 159, 64, 0.5)",
+        ],
+        borderColor: [
+          "rgba(255, 99, 132, 1)",
+          "rgba(54, 162, 235, 1)",
+          "rgba(255, 206, 86, 1)",
+          "rgba(75, 192, 192, 1)",
+          "rgba(153, 102, 255, 1)",
+          "rgba(255, 159, 64, 1)",
+        ],
+        borderWidth: 1,
+      },
+    ],
+  };
 
-export default function WatchList() {
   return (
     <div className="watchlist-container">
       <div className="search-container">
@@ -50,7 +49,7 @@ export default function WatchList() {
           type="text"
           name="search"
           id="search"
-          placeholder="Search eg: infy, bse, nifty fut weekly, gold mcx"
+          placeholder="Search eg:infy, bse, nifty fut weekly, gold mcx"
           className="search"
         />
         <span className="counts">{watchlist.length} / 50</span>
@@ -62,12 +61,14 @@ export default function WatchList() {
         ))}
       </ul>
 
-      <DoughnutChart data={chartData} />
+      <DoughnutChart data={data} />
     </div>
   );
-}
+};
 
-function WatchListItem({ stock }) {
+export default WatchList;
+
+const WatchListItem = ({ stock }) => {
   const [showActions, setShowActions] = useState(false);
 
   return (
@@ -90,19 +91,24 @@ function WatchListItem({ stock }) {
       {showActions && <WatchListActions uid={stock.name} />}
     </li>
   );
-}
+};
 
-function WatchListActions({ uid }) {
-  const { openBuyWindow } = useContext(GeneralContext);
+const WatchListActions = ({ uid }) => {
+  const context = useContext(GeneralContext);
 
-  const handleBuy = () => {
-    openBuyWindow(uid);
-  };
+  if (!context || !context.openBuyWindow) {
+    console.warn("⚠️ GeneralContext is not available or misconfigured.");
+    return null;
+  }
+
+  const handleBuy = () => context.openBuyWindow(uid);
 
   return (
     <span className="actions">
       <Tooltip title="Buy (B)" placement="top" arrow TransitionComponent={Grow}>
-        <button className="buy" onClick={handleBuy}>Buy</button>
+        <button className="buy" onClick={handleBuy}>
+          Buy
+        </button>
       </Tooltip>
 
       <Tooltip title="Sell (S)" placement="top" arrow TransitionComponent={Grow}>
@@ -122,4 +128,4 @@ function WatchListActions({ uid }) {
       </Tooltip>
     </span>
   );
-}
+};

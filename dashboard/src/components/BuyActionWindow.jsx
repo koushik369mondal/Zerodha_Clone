@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -9,6 +9,8 @@ export default function BuyActionWindow({ uid }) {
   const [stockQuantity, setStockQuantity] = useState(1);
   const [stockPrice, setStockPrice] = useState(0.0);
 
+  const { closeBuyWindow } = useContext(GeneralContext);
+
   const handleBuyClick = () => {
     axios.post("http://localhost:3002/newOrder", {
       name: uid,
@@ -17,11 +19,11 @@ export default function BuyActionWindow({ uid }) {
       mode: "BUY",
     });
 
-    GeneralContext.closeBuyWindow();
+    closeBuyWindow();
   };
 
   const handleCancelClick = () => {
-    GeneralContext.closeBuyWindow();
+    closeBuyWindow();
   };
 
   return (
@@ -34,7 +36,8 @@ export default function BuyActionWindow({ uid }) {
               type="number"
               name="qty"
               id="qty"
-              onChange={(e) => setStockQuantity(e.target.value)}
+              min="1"
+              onChange={(e) => setStockQuantity(Number(e.target.value))}
               value={stockQuantity}
             />
           </fieldset>
@@ -45,7 +48,8 @@ export default function BuyActionWindow({ uid }) {
               name="price"
               id="price"
               step="0.05"
-              onChange={(e) => setStockPrice(e.target.value)}
+              min="0"
+              onChange={(e) => setStockPrice(Number(e.target.value))}
               value={stockPrice}
             />
           </fieldset>
