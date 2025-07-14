@@ -12,3 +12,11 @@ describe('Hero Component', () => {
         expect(heroImage).toHaveAttribute('src', 'media/images/homeHero.png');
     });
 });
+describe('Renders signup button', () => {
+    test('renders signup button', () => {
+        render(<Hero />);
+        const signupButton = screen.getByRole('button', { name: /Sign up for free/i });
+        expect(signupButton).toBeInTheDocument();
+        expect(signupButton).toHaveClass('btn btn-primary fs-5 mb-5');
+    });
+});
