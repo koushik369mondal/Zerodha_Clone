@@ -13,6 +13,7 @@ import { watchlist } from "../data/data";
 import DoughnutChart from "./DoughnutChart"; // ✅ fixed import
 
 const labels = watchlist.map((stock) => stock.name);
+const handleSell = () => context.openSellWindow(uid);
 
 const WatchList = () => {
   const data = {
