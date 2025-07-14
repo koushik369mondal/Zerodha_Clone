@@ -13,7 +13,7 @@ A full-stack clone of Zerodha — India's top stock trading platform. Built with
 - MongoDB Atlas
 - Vitest + Testing Library
 - Netlify (Frontend & Dashboard)
-- Render/Railway (Backend)
+- Render (Backend)
 
 ---
 
