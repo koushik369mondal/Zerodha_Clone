@@ -12,7 +12,7 @@ export default function BuyActionWindow({ uid }) {
   const { closeBuyWindow } = useContext(GeneralContext);
 
   const handleBuyClick = () => {
-    axios.post("http://localhost:3002/newOrder", {
+    axios.post("https://zerodha-backend-li4e.onrender.com/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,

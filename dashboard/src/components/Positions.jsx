@@ -6,7 +6,7 @@ export default function Positions() {
   const [allPositions, setAllPositions] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allPositions")
+    axios.get("https://zerodha-backend-li4e.onrender.com/allPositions")
       .then((res) => {
         setAllPositions(res.data);
       })
