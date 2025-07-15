@@ -1,9 +1,9 @@
-# 💹 Zerodha FullStack
+# 💹 Zerodha Full Stack 
 
 Full-stack website of India's leading stock trading platform with real-time dashboard, portfolio management, and order execution.
 
 ## 🌐 Live Demo
-- **Frontend**: [zerodha-fullstack.vercel.app](https://zerodha-fullstack-exao372vh-koushik369mondals-projects.vercel.app/)
+- **Frontend**: [zerodha-fullstack.vercel.app](https://zerodha-fullstack.vercel.app/)
 - **Dashboard**: [zerodha-dashboard.vercel.app](https://zerodha-dashboard-bay.vercel.app/)
 
 ## 🛠️ Tech Stack
