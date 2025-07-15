@@ -1,6 +1,6 @@
 # 💹 Zerodha Full Stack 
 
-Full-stack website of India's leading stock trading platform with real-time dashboard, portfolio management, and order execution.
+A full-stack stock trading website that simulates holdings, positions, and order management with separate user and admin dashboards.
 
 ## 🌐 Live Demo
 - **Frontend**: [zerodha-fullstack.vercel.app](https://zerodha-fullstack.vercel.app/)
