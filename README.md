@@ -1,6 +1,6 @@
 # 💹 Zerodha FullStack
 
-Full-stack clone of India's leading stock trading platform with real-time dashboard, portfolio management, and order execution.
+Full-stack website of India's leading stock trading platform with real-time dashboard, portfolio management, and order execution.
 
 ## 🌐 Live Demo
 - **Frontend**: [zerodha-fullstack.vercel.app](https://zerodha-fullstack-exao372vh-koushik369mondals-projects.vercel.app/)
