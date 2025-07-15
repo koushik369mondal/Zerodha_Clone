@@ -1,90 +1,39 @@
+# 💹 Zerodha FullStack
 
-```markdown
-# 💹 Zerodha Fullstack Clone
+Full-stack clone of India's leading stock trading platform with real-time dashboard, portfolio management, and order execution.
 
-A full-stack clone of Zerodha — India's top stock trading platform. Built with MERN stack to simulate holdings, positions, orders, and a real-time trading dashboard.
+## 🌐 Live Demo
+- **Frontend**: [zerodha-fullstack.vercel.app](https://zerodha-fullstack-exao372vh-koushik369mondals-projects.vercel.app/)
+- **Dashboard**: [zerodha-dashboard.vercel.app](https://zerodha-dashboard-bay.vercel.app/)
 
----
+## 🛠️ Tech Stack
+**Frontend**: React.js (Vite) • **Backend**: Node.js + Express • **Database**: MongoDB Atlas • **Testing**: Vitest
 
-## 🚀 Tech Stack
-
-- React.js (Vite)
-- Node.js + Express
-- MongoDB Atlas
-- Vitest + Testing Library
-- Netlify (Frontend & Dashboard)
-- Render (Backend)
-
----
-
-## 🔧 Setup Instructions
-
-1. **Clone the repo**
-
+## 🚀 Quick Start
 ```bash
+# Clone & install
 git clone https://github.com/your-username/zerodha-fullstack.git
-cd zerodha-fullstack
-````
+cd zerodha-fullstack && npm install
 
-2. **Install dependencies**
+# Setup environment
+echo "PORT=3002\nMONGO_URL=your_mongodb_url" > backend/.env
 
-```bash
-cd backend && npm install
-cd ../frontend && npm install
-cd ../dashboard && npm install
+# Run all services
+npm run dev
 ```
 
-3. **Set up `.env` in `/backend`**
+## 📋 Features
+- Real-time stock dashboard
+- Portfolio & holdings management
+- Order placement & tracking
+- Responsive design
 
-```
-PORT=3002
-MONGO_URL=your_mongodb_connection_string
-```
+## 🤝 Contributing
+You're welcome to contribute! Fix bugs, add features, improve UI, or suggest ideas.
 
-4. **Run the app**
-
-```bash
-# Backend
-cd backend && npm run dev
-
-# Frontend
-cd ../frontend && npm run dev
-
-# Dashboard
-cd ../dashboard && npm run dev
-```
+Fork → Branch → Code → Pull Request
 
 ---
+**Kaushik Mandal** • [koushik369mondal@gmail.com](mailto:koushik369mondal@gmail.com) • [LinkedIn](https://www.linkedin.com/in/koushik369mondal)
 
-## 🧪 Run Tests (Frontend/Dashboard)
-
-```bash
-npm run test
-```
-
----
-
-## 🤝 Contribute
-
-You're welcome to contribute!
-Fix bugs, add features, improve UI, or suggest ideas.
-
-### Steps:
-
-1. Fork this repo
-2. Create a new branch
-3. Make your changes
-4. Submit a Pull Request 🚀
-
----
-
-## 📩 Contact
-
-**Kaushik Mandal**
-📧 [koushik369mondal@gmail.com](mailto:koushik369mondal@gmail.com)
-🔗 [LinkedIn](https://www.linkedin.com/in/koushik369mondal)
-
----
-
-⭐ If you like this project, give it a star!
-
+⭐ Star this repo if you found it helpful!
