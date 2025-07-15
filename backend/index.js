@@ -60,6 +60,10 @@ app.post("/newOrder", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("🟢 Zerodha Backend is running!");
+});
+
 // ✅ Connect to DB first, then start server
 async function startServer() {
   try {
